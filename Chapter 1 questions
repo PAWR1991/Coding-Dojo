@@ -1,0 +1,420 @@
+Chapter 0 questions
+	Setting and Swapping
+		var myNumber = 42;
+		var myName = ='Paul';
+
+		var tempVar = myNumber;
+		myNumber = myName;
+		myName = tempVar;
+
+	Print -52 to 1066
+		for (var x = -52; x <= 1066; x++){
+		console.log(x);
+		}
+
+	Dont Worry, Be Happy
+		function beCheerful(){
+			for (var x = 0; x < 98; x++){
+				console.log("good morning");
+			}
+			
+		}
+
+	Multiples of Three but not all
+		for (var x = -299; x < 0; x = x + 3) {
+			if (x != 3){
+				if(x != 6){
+					console.log(x);
+				}
+			}
+		}
+
+	Printing Integers with While
+		var x = 2000;
+		while (x <= 5280) {
+		console.log(x);
+		x++;
+		}
+
+	You Say It's Your Birthday
+		var myBirthday = 0, myBirthdayMonth = 0;
+
+		if ( myBirthday == 1 && myBirthdayMonth == 2 ){
+			console.log("How did you know");
+		}
+		else {
+			console.log("Just another day....");
+		}
+
+	Leap Year 
+		if (Year % 4 == 0)
+		{
+			if (Year % 100 == 0 && Year % 400 != 0){
+			console.log("No a Leap Year");
+			}
+			else{
+			console.log("Leap Year");
+			}	
+		}
+		else {
+			console.log("No a Leap Year");
+		}
+
+	Print and Count
+		var counter = 0;
+
+		for (var x = 512; x <= 4096; x++){
+			if (x % 5 == 0){
+				console.log(x);
+				counter++;
+			}
+		}
+
+	Multiples of Six
+
+		var x = 0;
+		while (x <= 60000){
+
+			if (x % 6 == 0){
+				console.log(x);
+			}
+			x++;
+		}
+
+	Counting, the Dojo Way
+
+		for (var x = 1; x <= 100; x++){
+			if (x % 5 == 0 && x % 10 == 0){
+				console.log("Dojo");
+			}
+			else if (x % 5 == 0){
+				console.log("Coding");
+			}
+			else{
+				console.log(x);
+			}
+		}
+
+	What Do You know
+		var output = incoming();
+		console.log(output);
+
+	Whoa, That Sucker's Huge...
+		var sum = 0;
+		for (var x = -300000 + 1; x <= 300000; x = x + 2){
+		sum = sum + x;
+		}
+
+		console.log(sum);
+
+		Yes. The sum is going to be 0!
+
+	Countdown by Fours
+
+		var x = 2016;
+		while(x > 0){
+			console.log(x);
+			x = x - 4;
+		}
+
+	Flexible Countdown
+		var content = "";
+		for(var x = highNum; x >= lowNum; x--;{
+			if ( x % mult == 0 ){
+				content +=""+x+" ";
+			}
+		}
+			console.log(content);
+
+	The Final Countdown
+		{
+			var content = "";
+			var x = param2;
+
+			while (x > param3){
+				if( x == param4){
+					
+				}
+				else if ( x % param1 == 0 ){
+					content +=""+x+" ";
+				}
+				x++;
+			}
+			console.log(content);
+		}
+
+Chapter 1 questions
+	
+	Countdown
+		function newArray(num){
+			var tempArray = [];
+			for (var x = num; x >= 0; x--){
+				tempArray.push(x);
+			}
+
+			return tempArray
+		}
+
+		var FunArray = newArray(num);
+
+	The array length is base on what the num's input is + 1
+
+	Print and Return
+		function(array){
+			console.log(array[0]);
+
+			return array[1];
+		}
+
+	First Plus length
+	function sumArray(array){
+	var sum = array[0]+array.length;
+	}
+
+	Values Greater Than Second
+	function secondArray(array){
+		var counter = 0;
+		for(var x = 0; x < array.length; x++){
+			if (x > array[1]){
+				console.log(array[x]);
+				counter++;
+			}
+		}
+		return counter;
+	}
+
+	Values Greater Than Second, Generalized
+	function secondArray(array){
+		var newArray = [];
+		var counter = 0;
+		for(var x = 0; x < array.length; x++){
+			if (array.length > 2){
+			return console.log("array not large enough");
+			break;
+			}
+			if (x > array[1]){
+				newArray.push(array[x]);
+				counter++;
+			}
+		}
+		console.log(counter);
+		return newArray;
+	}
+
+	This Length, That Values
+		function jinx(num1, num2){
+			var newArray = [];
+			for(var x = 0; x < num1; x++){
+				newArray[x] = num2;
+			}
+			if ( num1 == num2){
+				console.log("Jinx!");
+			}
+
+			return newArray;
+		}
+
+	Fit the First Values
+		function size(array){
+			if (array[0]==array.length){
+				console.log("Just Right");
+			}
+			else if (array[0]> array.length){
+				console.log ("Too big!");
+			}
+			else{
+				console.log("Too small!");
+			}
+		}
+
+	Fahreneit to Celsius
+		function fahrenheitToCelsius(fDegree){
+			var Celsius = (5/9)*(fDegree - 32);
+			return Celsius;
+		}
+
+	Fahreneit to Celsius
+		function celsiusToFahrenheit(cDegree){
+			var  Fahreneit = ((9/5)*fDegree) + 32;
+			return Fahreneit;
+		}
+
+Chapter 1 Fundamentals
+	Biggie size
+		function makeItBig (array){
+			for(var x = 0; x < array.length; x++){
+				if (array[x] > 0){
+					array[x] = "big";
+
+				}
+			}
+			return array;
+		}
+
+	Print Low, Return High
+		function returnHigh (array){
+			var High = array[0];
+			var Low = array[0];
+			for(var x = 0; x < array.length; x++){
+				if (array[x] > High){
+					High = array[x];
+				}
+				else if (array[x] < Low ){
+					Low = array[x]
+				}
+			}
+			console.log(Low);
+			return High;
+		}
+
+	Print Low, Return High
+		function returnHigh (array){
+			var second = 0;
+			var odd = 0;
+			for(var x = 0; x < array.length; x++){
+				if (array[x] % 2 = 1){
+					odd = array[x];
+					break;
+				}
+				
+			}
+			console.log(array[array.length - 2]);
+			return odd;
+		}
+
+	Double Vision
+		function double(array){
+			var newArray = [];
+			for(var x = 0; x < array.length; x++){
+				 newArray[x] = array[x]*2;	
+			}
+			return newArray;
+		}
+
+	Count Positives
+		function countPositives(array){
+			var counter = 0;
+			for(var x = 0; x < array.length; x++){
+				 if (array[x] > 0){
+				 	counter++;
+				 }
+			}
+			array[array.length-1] = counter;
+			return newArray;
+		}
+
+	Evens and Odds
+		function countPositives(array){
+			var odd = 0, even = 0;
+			for(var x = 0; x < array.length; x++){
+				 if (array[x] % 2 = 1){
+				 	even = 0;
+				 	odd++;
+				 }
+				 else if (array[x] % 2 = 0){
+				 	odd = 0;
+				 	even++;
+				 }
+
+				 if (even % 3 = 0){
+				 	console.log("Even more so!");
+				 }
+				 if (odd % 3 = 0){
+				 	console.log("That's odd!");
+				 }
+			}
+			
+		}
+
+	Increment the Seconds
+		function evenArray(array){
+			
+			for(var x = 0; x < array.length; x++){
+				 if (array[x] % 2 == 1) {
+				 	array[x] = array[x] + 1;
+				 }
+				 
+			}
+			return array;
+		}
+
+
+	Previous Length
+		function length(array){
+			var counter = 0;
+			for(var x = 0; x < array.length; x++){
+				 counter = array[x].length;
+				 array[x]  = counter;
+			}
+			return array;
+		}
+
+	Add Seven to Most
+		function double(array){
+			var newArray = [];
+			for(var x = 1; x < array.length; x++){
+				 newArray[x-1] = array[x] + 7;	
+			}
+			return newArray;
+		}
+
+	Reverse array
+		function reverse(array){
+			var newArray = [];
+			var counter = array.length;
+			for(var x = 0; x < array.length; x++){
+				 newArray[x] = array[counter];	
+			}
+			return newArray;
+		}
+
+	Outlook: Negative
+		function reverse(array){
+			var newArray = [];
+			for(var x = 0; x < array.length; x++){
+				 newArray[x] = array[x] * -1;	
+			}
+			return newArray;
+		}
+
+	Always Hungry
+		function yummy(array){
+			var counter = 0;
+			for(var x = 0; x < array.length; x++){
+				 if (array[x] == "food"){
+				 	console.log("yummy!");
+				 	counter++;
+				 }	
+			}
+			if (counter == 0){
+				console.log("I'm hungry");
+			}
+		}
+
+	Swap Toward the Center
+		function Swap(array){
+			var tempValue = 0, var last = array[array.length-1], var first = array[0];
+
+			array[0] = last;
+			array[array.length-1] = first;
+
+			if (array.length > 5){
+				first = array[2];
+				last = array[array.length-3];
+
+				array[2] = last;
+				array[array.length-3] = first;
+			}
+			
+		}
+
+	Scale the array
+		function reverse(array, num){
+			var newArray = [];
+			for(var x = 0; x < array.length; x++){
+				 newArray[x] = array[x] * num;	
+			}
+			return newArray;
+		}
+
+

@@ -1,0 +1,173 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+	/*background-color: pink;*/
+	outline: 2px dashed red;
+	font-family: 'Roboto' ,sans-serif;
+	/*margin: 0px auto;*/
+}
+.wrapper{
+
+	width: 970px;
+	/*height: 2000px;*/
+	background-color: #062135;
+	padding: 20px;
+}
+
+.header{
+	color:  white;
+	display: flex;
+
+}
+.header h1{
+	font-weight: normal;
+	margin-left: 20px;
+}
+
+.header h1 span{
+	color: #1b97e6;
+}
+
+.header li span{
+	color: #1b97e6;
+}
+
+.header ul{
+	display: flex;
+	/*padding: 10px;*/
+
+}
+
+.header li{
+	list-style-type: none;
+	padding: 0px 30px;
+	margin-top: 10px;
+	font-size: 13px;
+}
+/*.space_between{
+
+}*/
+
+.main{
+	margin-top: 30px;
+	width: 970px;
+	/*height: 1800px;*/
+	color: white;
+	background-color: white;
+}
+
+#main_img{
+	width: 970px;
+}
+
+.icon{
+	width: 30px;
+
+}
+
+.blue_boxes{
+	display: flex;
+}
+
+#middle_box{
+	margin: 0px 10px;
+}
+
+.blue{
+	width: 300px;
+	height: 235px;
+	background-color: #1567a8;
+	padding: 15px
+}
+
+.blue h2{
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	font-weight: normal;
+}
+
+.blue p{
+	padding: 5px;
+	font-size: 13px;
+	color: white;
+	margin: 5px 0px 15px 0px; 
+}
+
+.headers{
+	color: black;
+	/*display: flex;*/
+	/*height: 50;*/
+	padding:20px 0;
+}
+
+.headers h2{
+	display: inline-block;
+}
+
+#test{
+	margin-left: 382px;
+}
+
+#building{
+	width: 300px;
+	height: 145px;
+}
+
+.clear_boxes{
+	display: flex;
+}
+
+.clear{
+	width: 300px;
+	height: 235px;
+	/*padding: 15px*/
+	color: black;
+}
+#middle_clear{
+	margin-left: 0px 15px;
+	font-size: 12px;
+}
+#middle_clear p{
+	margin-bottom: 15px;
+}
+.bubble{
+	background-color: #daedff;
+	width: 270px;
+	height: 150px;
+	font-style: italic;
+
+	padding: 15px;
+}
+.little_trangle{
+	background-color: #daedff;
+	width: 20px;
+	height: 20px;
+	transform: rotate(45deg);
+	position: relative;
+	top: -10px;
+	left: -90px;
+}
+#sam{
+	font-size: 12px;
+	margin-top: 10px;
+}
+.footer{
+	width: 970px;
+	background-color: lightblue;
+	border-top: 2px solid black;
+	padding: 20px 0px;
+}
+.footer ul{
+	display: flex;
+}
+.nav_bar{
+	width: 400px;
+	/*margin-top: 20px;*/
+}
+
+.nav_bar ul{
+	list-style-type: none;
+	font-size: 12px;
+	/*color: #*/
+}

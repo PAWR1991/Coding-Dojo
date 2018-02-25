@@ -1,0 +1,166 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+	outline: 1px dashed red;
+}
+#wrapper{
+	width: 976px;
+	background: radial-gradient(#1B1B1B,#101010);
+	color: white;
+	padding: 10px;
+}
+/**/
+.header{
+	background-color: #1A1A1A;
+}
+.header img{
+	display: inline-block;
+	width: 300px;
+	height: 100px;
+	margin-left: 8px;
+}
+.header h3{
+	float: right;
+	margin-top: 25px;
+	margin-right: 8px;
+}
+/**/
+.nav_bar {
+	width: 976px;
+	background: linear-gradient(to top, #353535,#464646,#525252);
+	float: left;
+}
+.nav_bar ul{
+	/*display: flex;*/
+	/*border-left*/
+	
+}
+.nav_bar li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 20px;
+	border-left: 2px solid gray;
+
+}
+.empty_space{
+	margin-left: 251px;
+	/*height: 0px */
+}
+.noborder{
+	border-left: 
+}
+.main_pic{
+	border-bottom: 4px solid gray;
+}
+/**/
+.info_box{
+	display: flex;
+	margin-top: 49px
+	background-color: #1A1A1A;
+}
+.info{
+	width: 240px;
+	/*display: flex;*/
+/**/
+}
+.info_pic_logo{
+	/*display: inline-block;*/
+	float: left;
+	height: 190px
+}
+.info h2{
+	/*display: inline-block;*/
+	float: left;
+	height: 37px;
+	width: 180px;
+	padding: 5px 5px 0px 5px;
+	font-weight: normal;
+	color: #E27329;
+}
+.info p{
+	font-size: 12px
+	padding-left: 7px;	
+}
+/**/
+.buy_box{
+	/*border:1px groove #1A1A1A;*/
+	background: repeating-linear-gradient(-45deg, #050505, #1A1A1A 2px, #050505 2px);
+	/*background-color: #050505;*/
+	padding: 30px;
+	/*height: 200px;*/
+	/*display: flex;*/
+}
+.sub_buy_box{
+	
+	width: 600px;
+	display: inline-block;
+	/*margin-top: 50px;*/
+}
+.sub_buy_box h2{
+	font-weight: normal;
+}
+#buy_now{
+	width: 120px;
+	height: 40px;
+	color: #FBF7F0;
+	background: linear-gradient(to bottom,#F4AB75,#F08B3F,#EF7F2C);
+	border-radius: 5px;
+	border-color: #CA6B26;
+	display: inline-block;
+	/*margin-left:174px;*/
+	position: relative;
+	left: 190px;
+	top: -48px;
+}
+/**/
+.portfolio_box{
+	height: 29px;
+	padding: 25px 0px;
+	background-color: #1A1A1A;
+}
+.portfolio_box h2{
+	float: left;
+	font-weight: normal;
+	position: relative;
+	right: -15px;
+}
+.portfolio_box a{
+	float: right;
+	text-decoration: none;
+	font-style: italic;
+	color: #E27329;
+}
+/**/
+.portfolio_wrapper{
+	display: flex;
+	background-color: #1A1A1A;
+}
+.pPhoto{
+	border: 3px groove #626261;
+}
+.pbox{
+	width: 218px;
+}
+.pbox h3{
+	color: #E27329;
+	font-weight: normal;
+	padding: 5px 0px 5px 0px;
+}
+.pbox p{
+	font-size: 13px;
+	padding: 5px 0px 10px 0px;
+}
+/**/
+.footer{
+	background-color: #1A1A1A;
+	height: 10px;
+	padding-top: 20px
+}
+.footer a{
+	float: right;
+	text-decoration: none;
+	color: gray;
+	font-size: 9px;
+	position: relative;
+	left: -20px;
+}

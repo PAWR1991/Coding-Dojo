@@ -1,0 +1,152 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.header{
+	width: 1050px;
+	height: 60px;
+	background-color: #f8f8f8;
+	display: flex;
+	/*linear-gradient*/
+	/*margin-bottom: 20px;
+	margin-top: 20px;*/
+}
+.header h1{
+	padding: 20px;
+
+}
+.header h3{
+	padding: 30px;
+}
+.header_between{
+	width: 500px;
+}
+#wrapper{
+	width: 1050px;
+	/*height: 1400px;*/
+	background: radial-gradient(#6F5964,#1A0A0E);
+	overflow: hidden;
+	padding: 20px
+}
+#pic{
+	width: 428px;
+	height: 298px;
+	background-color: #bdbdbd;
+	float: left;
+	/*padding: 5px;*/
+	margin: 0px 0px 18px 23px;
+	/*margin: 20px;*/
+	border: 2px solid gray;
+}
+#about{
+	width: 450px;
+	height: 300px;
+	background: linear-gradient(to left,#DACBD9,#FBFBFB);
+	float: right;
+	/*padding: 5px;*/
+	margin: 0px 25px 20px 0px;
+}
+#about p{
+	padding: 10px;
+
+	font-size: 14px;
+}
+#about a{
+	margin-left: 10px;
+}
+#La_Mode{
+	width: 300px;
+	height: 650px;
+	background: linear-gradient(to left,#DACBD9,#FBFBFB);
+	float: left;
+	/*padding: 5px;*/
+	margin: 0px 20px;
+}
+#family{
+	width: 300px;
+	height: 650px;
+	background: linear-gradient(to left,#DACBD9,#FBFBFB);
+	display: inline-block;
+	margin-left: 34px;
+	
+}
+#fiveEleven{
+	width: 300px;
+	height: 650px;
+	background: linear-gradient(to left,#DACBD9,#FBFBFB);
+	float: right;
+	margin-right: 25px;
+		/*padding: 5px;*/
+}
+.SubBox{
+	width: 280px;
+	height: 30px;
+	background: linear-gradient(to top,#B3B3B7,#888694,#CCCCCD);
+	/*padding: 5px;*/
+	display: inline-block;
+	padding: 10px;
+	color: white;
+}
+.SubBox_About{
+	width: 430px;
+	height: 40px;
+	background: linear-gradient(to top,#B3B3B7,#888694,#CCCCCD);
+	/*padding: 5px;*/
+	display: inline-block;
+	padding: 10px;
+	color: white;
+}
+.SubTextbox{
+	width: 300px;
+	height:150px;
+	/*padding: 5px;*/
+	display: inline-block;
+}
+.SubTextbox{
+	padding: 5px;
+}
+.techPic{
+	width: 300px;
+	height:100px;
+}
+.logo{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+}
+
+button{
+	height: 40px;
+	width: 80px;
+	color: white;
+	background: #407D61;
+	margin-left: 110px;
+	border-radius: 10px;
+	border-color: black;
+
+}
+
+.info{
+	width:1050px;
+	height: 30px;
+	text-align: center; 
+}
+.info p{
+	padding: 5px;
+}
+/*.socialMedia{
+	width: 1050px;
+}*/
+.info img{
+	width: 20px;
+	height: 20px;
+}
+.info ul{
+	display: flex;
+	margin-left: 336px;
+}
+.info li{
+	list-style-type: none;
+	padding: 5px;
+	
+}
