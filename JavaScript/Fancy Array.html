@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+
+			var Namearray = [ "James", "Jill", "Jane", "Jack" ];
+			
+			 function Fancy(array1, TrueorFalse){
+
+				if(TrueorFalse == true){
+					for(var i = array1.length - 1; i >= 0; i--){
+						console.log(i, " -> ",array1[i]);
+					}
+				}
+				else {
+					for(var i = 0; i <= array1.length - 1; i++){
+						console.log(i," -> ", array1[i]);
+					}
+				}
+			}
+
+			Fancy(Namearray, false);
+		</script>
+
+	</body>
+</html>

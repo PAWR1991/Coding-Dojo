@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Learning JQuery</title>
+	<link rel="stylesheet" type="text/css" href="JQuery_style.css">
+	<meta name="description" content="Paul Roberts CSS and HTML test in the first week">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+
+		$ (document).ready(function() {
+			// Click, Hide, Show
+			$('.Fclick p').click(function(event) {
+				$('.Fclick h1').hide();
+			});
+			$('.clickBut').click(function(event) {
+				$('.Fclick h1').show();
+			});
+
+			$('.Ftoggle button').click(function() {
+				$('.Ftoggle p').toggle();
+			});
+
+			$('.SlideDownBut').click(function(event) {
+				/* Act on the event */
+				$('#slidedownPic').slideDown('slow', function() {
+					// $('')
+				});
+			});
+
+			$('.SlideupBut').click(function(event) {
+				/* Act on the event */
+				$('#slidedownPic').slideUp('slow', function() {
+					// $('')
+				});
+			});
+
+			$('.SlidetoggleBut').click(function(event) {
+				/* Act on the event */
+				$('.FSlidetoggle p').slideToggle('slow', function(){
+
+				});
+			});
+
+			$('.FfadeIn p').hide();
+
+			$('.FadeinBut').click(function(event) {
+				/* Act on the event */
+				$('.FfadeIn p').fadeIn('slow', function() {
+					
+				});
+			});
+
+			$('.FadeoutBut').click(function(event) {
+				/* Act on the event */
+				$('.FfadeIn p').fadeOut('slow', function() {
+					
+				});
+			});
+
+			$('.addClassBut').click(function(event) {
+				$('.FaddClass p').addClass('colorchange')
+			});
+
+			$('.BeforeBut').click(function(event) {
+				$('.Fbefore p').before('<br>');
+			});
+
+			$('.AfterBut').click(function(event) {
+				$('.Fafter p').after('<br>');
+			});
+
+			$('.AppendBut').click(function(event) {
+				/* Act on the event */
+				$('.Fappend').append('<h3> It Works </h3>')
+			});
+
+			$('.HtmlBut').click(function(event) {
+				$('.Fhtml p').html("<span class='colorchange'>Change the </span><b>text</b>")
+			});
+
+			$('.AttrBut').click(function(event) {
+				$('.Fattr img').attr({
+					src: 'img/content_icon2.png',
+					alt: 'Testing Attr'
+				});
+			});
+			
+			$('.valBut').click(function(event) {
+				/* Act on the event */
+				$('.Fval p').text($('.Fval input').val());
+			});
+
+			$('.Fdata').data('test', {first: "information", last: "data"})
+			$( ".Fdata span:first" ).text( $( ".Fdata" ).data( "test" ).first);
+			$( ".Fdata span:last" ).text( $( ".Fdata" ).data( "test" ).last );
+
+		});
+
+		
+	</script>
+</head>
+<body>
+	<div class="test_page">
+		<div class = "Fclick">
+			<h1>Click Function</h1>
+			<p>Something will happen if you click something or nothing!</p>
+			<button class="clickBut"> Click me</button>
+		</div>
+		<div class="Fhide">
+			<h1>Hide Function</h1>
+			<p>Something will hide if you click something or nothing!</p>
+			<button class="hideBut"> Click me</button>
+		</div>
+		<div class="Fshow">
+			<h1>Show Function</h1>
+			<p>Something will show if you click something or nothing!</p>
+			<button class="ShowBut"> Click me</button>
+		</div>
+		<div class="Ftoggle">
+			<h1>Toggle Function</h1>
+			<p>Something will toggle if you click something or nothing!</p>
+			<button class="ToggleBut"> Click me</button>
+		</div>
+		<div class="FslideDown">
+			<h1>Slide Down Function</h1>
+			<p>Something will Slide Down if you click something or nothing!</p>
+			<button class="SlideDownBut"> Click me</button>
+		</div>
+		<img id="slidedownPic" src="img/content_icon1.png" alt="Slide down Picture">
+
+		<div class="FslideUp">
+			<h1>Slide up Function</h1>
+			<p>Something will Slide up if you click something or nothing!</p>
+			<button class="SlideupBut"> Click me</button>
+		</div>
+		<div class="FSlidetoggle">
+			<h1>Slide Toggle Function</h1>
+			<p>Something will slide toggle if you click something or nothing!</p>
+			<button class="SlidetoggleBut"> Click me</button>
+		</div>
+		<div class="FfadeIn">
+			<h1>Fade In Function</h1>
+			<p>Something will Fade In if you click something or nothing!</p>
+			<button class="FadeinBut"> Click me</button>
+		</div>
+		<div class="FfadeOut">
+			<h1>Fade Out Function</h1>
+			<p>Something will Fade Out if you click something or nothing!</p>
+			<button class="FadeoutBut"> Click me</button>
+		</div>
+		<div class="FaddClass">
+			<h1>Add Class Function</h1>
+			<p>Something will Add Class if you click something or nothing!</p>
+			<button class="addClassBut"> Click me</button>
+		</div>
+		<div class="Fbefore">
+			<h1>Before Function</h1>
+			<p>Something will Before if you click something or nothing!</p>
+			<button class="BeforeBut"> Click me</button>
+		</div>
+		<div class="Fafter">
+			<h1>After Function</h1>
+			<p>Something will After if you click something or nothing!</p>
+			<button class="AfterBut"> Click me</button>
+		</div>
+		<div class="Fappend">
+			<h1>Append Function</h1>
+			<p>Something will Append if you click something or nothing!</p>
+			<button class="AppendBut"> Click me</button>
+		</div>
+		<div class="Fhtml">
+			<h1>Html Function</h1>
+			<p>Something will Html if you click something or nothing!</p>
+			<button class="HtmlBut"> Click me</button>
+		</div>
+		<div class="Fattr">
+			<h1>Attr Function</h1>
+			<p>Something will Attr if you click something or nothing!</p>
+			<button class="AttrBut"> Click me</button>
+			<img src="">
+		</div>
+		<div class="Fval">
+			<h1>VAL Function</h1>
+			<p>Something will Attr if you click something or nothing!</p>
+			<!-- <form> -->
+			  Change text:<br>
+			  <input type="text" name="change"><br>
+			  <button class="valBut"> Change text</button>
+			<!-- </form> -->
+
+		</div>
+		<div class="Ftext">
+			<h1>TEXT Function</h1>
+			<p>Something will TEXT if you click something or nothing!</p>
+			<button class="TEXTBut"> Click me</button>
+		</div>
+		<div class="Fdata">
+			<h1>DATA Function</h1>
+			<p>Something will DATA store <span></span> and <span></span></p>
+			<button class="dataBut"> Click me</button>
+		</div>
+	</div>
+
+</body>
+</html>
